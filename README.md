@@ -48,6 +48,11 @@ Copy this into a `.env` file in the root. Do not commit your keys to git!
 
 Specify what it takes to deploy your app.
 
+## Tools
+
+This project uses Tailwind for the UI styles.
+[Learn more about Tailwind in Ember apps.](https://asasmith.com/tailwindcss-v3-emberjs-setup)
+
 ## Further Reading / Useful Links
 
 * [ember.js](https://emberjs.com/)
