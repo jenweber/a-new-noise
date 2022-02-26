@@ -22,6 +22,9 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
+Set up your local env variables. See `.sample_env` for an example.
+Copy this into a `.env` file in the root. Do not commit your keys to git!
+
 * `npx ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
