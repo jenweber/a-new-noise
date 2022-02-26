@@ -1,7 +1,9 @@
 # a-new-noise
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A demo of different kinds of services for building dynamic, creative
+Ember apps! Presented at EmberConf 2022.
+
+A project by Jen Weber.
 
 ## Prerequisites
 
@@ -20,13 +22,9 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `ember serve`
+* `npx ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
 
