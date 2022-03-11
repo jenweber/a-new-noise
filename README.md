@@ -50,8 +50,10 @@ Specify what it takes to deploy your app.
 
 ## Tools
 
+Image capture via WebRTC. [MDN demo](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos).
+
 This project uses Tailwind for the UI styles.
-[Learn more about Tailwind in Ember apps.](https://asasmith.com/tailwindcss-v3-emberjs-setup)
+[Learn more about Tailwind in Ember apps.](https://asasmith.com/tailwindcss-v3-emberjs-setup).
 
 ## Further Reading / Useful Links
 
