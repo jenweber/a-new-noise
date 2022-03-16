@@ -5,7 +5,7 @@ const constraints = { audio: false, video: true };
 export default class CameraService extends Service {
   constructor() {
     super();
-    console.log('GET MEDIA')
+    console.log('GET MEDIA');
     this.getMedia();
   }
 
