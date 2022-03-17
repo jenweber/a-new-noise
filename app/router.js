@@ -10,4 +10,5 @@ Router.map(function () {
   this.route('setup');
   this.route('story');
   this.route('about');
+  this.route('photo-booth');
 });

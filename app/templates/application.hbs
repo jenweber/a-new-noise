@@ -1,8 +1,19 @@
-<main class="p-20">
-{{outlet}}
+<nav>
+  <ul>
+    <li><LinkTo @route='index'>Home</LinkTo></li>
+    <li><LinkTo @route='setup'>Setup</LinkTo></li>
+    <li><LinkTo @route='photo-booth'>Photo Booth</LinkTo></li>
+    <li><LinkTo @route='story'>Story</LinkTo></li>
+    <li><LinkTo @route='about'>About</LinkTo></li>
+  </ul>
+</nav>
+<main class='p-20'>
+  {{outlet}}
 </main>
 
 <footer>
-Made with &hearts; in <a href="https://emberjs.com">Ember.js</a>
-by Jen Weber. Twitter: <a href="https://twitter.com/jwwweber">@jwwweber</a>.
+  Made with &hearts; in
+  <a href='https://emberjs.com'>Ember.js</a>
+  by Jen Weber. Twitter:
+  <a href='https://twitter.com/jwwweber'>@jwwweber</a>.
 </footer>
