@@ -2,23 +2,46 @@ import Component from '@glimmer/component';
 import { service } from '@ember/service';
 import { action } from '@ember/object';
 
+
+var textToSpeech = function (state) {
+  const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${key}`;
+  const data = {
+    input: {
+      text: 'Android is a mobile operating system developed by Google, based on the Linux kernel and designed primarily for touchscreen mobile devices such as smartphones and tablets.',
+    },
+    voice: {
+      languageCode: 'en-gb',
+      name: 'en-GB-Standard-A',
+      ssmlGender: 'FEMALE',
+    },
+    audioConfig: {
+      audioEncoding: 'MP3',
+    },
+  };
+  const otherparam = {
+    headers: {
+      'content-type': 'application/json; charset=UTF-8',
+    },
+    body: JSON.stringify(data),
+    method: 'POST',
+  };
+  fetch(url, otherparam)
+    .then((data) => {
+      return data.json();
+    })
+    .then((res) => {
+      console.log(res.audioContent);
+    })
+    .catch((error) => {
+      console.log(error);
+      state.onError(error);
+    });
+};
+
 export default class StoryReaderComponent extends Component {
   @service formData;
 
   @action play() {
-    // https://stackoverflow.com/questions/21513706/getting-the-list-of-voices-in-speechsynthesis-web-speech-api
-    async function speak() {
-      // await initVoices();
-      const text = document.querySelector('#story').innerText;
-      const msg = new SpeechSynthesisUtterance(text);
-      // 1, 10, 11, 33
-      console.log(speechSynthesis.getVoices())
-      // msg.voice = speechSynthesis.getVoices()[50]; // best chrome
-      msg.voice = speechSynthesis.getVoices()[33]; // best firefox
-      msg.rate = 0.9;
-      msg.pitch = 1.2;
-      window.speechSynthesis.speak(msg);
-    }
-    speak();
+    textToSpeech()
   }
 }
