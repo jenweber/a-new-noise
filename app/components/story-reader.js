@@ -15,20 +15,9 @@ export default class StoryReaderComponent extends Component {
       console.log(speechSynthesis.getVoices())
       // msg.voice = speechSynthesis.getVoices()[50]; // best chrome
       msg.voice = speechSynthesis.getVoices()[33]; // best firefox
+      msg.rate = 0.9;
       msg.pitch = 1.2;
-      msg.rate = 1;
       window.speechSynthesis.speak(msg);
-    }
-
-    function initVoices() {
-      return new Promise(function (res, rej) {
-        speechSynthesis.getVoices();
-        if (window.speechSynthesis.onvoiceschanged) {
-          res();
-        } else {
-          window.speechSynthesis.onvoiceschanged = () => res();
-        }
-      });
     }
     speak();
   }
