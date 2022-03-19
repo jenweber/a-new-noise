@@ -8,13 +8,16 @@ export default class StoryReaderComponent extends Component {
   @action play() {
     // https://stackoverflow.com/questions/21513706/getting-the-list-of-voices-in-speechsynthesis-web-speech-api
     async function speak() {
-      await initVoices();
+      // await initVoices();
       const text = document.querySelector('#story').innerText;
       const msg = new SpeechSynthesisUtterance(text);
       // 1, 10, 11, 33
-      msg.voice = speechSynthesis.getVoices()[50];
-      msg.rate = 0.9;
-      speechSynthesis.speak(msg);
+      console.log(speechSynthesis.getVoices())
+      // msg.voice = speechSynthesis.getVoices()[50]; // best chrome
+      msg.voice = speechSynthesis.getVoices()[33]; // best firefox
+      msg.pitch = 1.2;
+      msg.rate = 1;
+      window.speechSynthesis.speak(msg);
     }
 
     function initVoices() {
