@@ -1,15 +1,12 @@
 <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 min-w-600">
-  <Heading>Setup</Heading>
-  <Field @label="Name" @value={{this.formData.name}} />
-  <Field @label="Sound" @value={{this.formData.soundA}}/>
-  <Field @label="Vehicle" @value={{this.formData.vehicle}} />
-  <Field @label="Animal" @value={{this.formData.animal}}/>
-  <Field @label="Sound" @value={{this.formData.soundB}}/>
-  <Field @label="Nonsense sound" @value={{this.formData.nonsenseA}}/>
-  <Field @label="Nonsense sound" @value={{this.formData.nonsenseB}}/>
-  <Field @label="Action verb" @value={{this.formData.verb}} />
-  <Field @label="Noun" @value={{this.formData.noun}}/>
-  <Field @label="Nonsense sound" @value={{this.formData.nonsenseC}} />
-  <Field @label="Nonsense sound" @value={{this.formData.nonsenseD}} />
-  <button type="button" {{on 'click' this.submit}}>Submit</button>
+  <Field @label="Your name" @value={{this.formData.name}} />
+  <Field @label="Sound - like honk or crash" @value={{this.formData.soundA}}/>
+  <Field @label="Vehicle - like airplane" @value={{this.formData.vehicle}} />
+  <Field @label="Animal - like lion or bear" @value={{this.formData.animal}}/>
+  <Field @label="Nonsense sound, like oouihuhaha" @value={{this.formData.nonsenseA}}/>
+  <Field @label="Sound - like honk or crash" @value={{this.formData.soundB}}/>
+  <Field @label="Action verb, like smash or eat" @value={{this.formData.verb}} />
+  <Field @label="Concrete Noun, like piano" @value={{this.formData.noun}}/>
+  <Field @label="Nonsense sound, like oouihuhaha" @value={{this.formData.nonsenseB}}/>
+  <ButtonLink @routeName="photo-booth">Go to step 2</ButtonLink>
 </form>
