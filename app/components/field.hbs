@@ -1,8 +1,10 @@
-<label class='block text-gray-700 text-sm font-bold pt-16' for={{this.id}}>
-  {{@label}}
-</label>
-<Input
-  class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-  @value={{@value}}
-  id={{this.id}}
-/>
+<div class="field-wrapper">
+  <label class='field-label' for={{this.id}}>
+    {{@label}}
+  </label>
+  <Input
+    class='field-input'
+    @value={{@value}}
+    id={{this.id}}
+  />
+</div>

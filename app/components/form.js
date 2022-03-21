@@ -9,4 +9,8 @@ export default class FormComponent extends Component {
   @action submit() {
     this.router.transitionTo('/');
   }
+
+  @action autofill() {
+    this.formData.autofill();
+  }
 }

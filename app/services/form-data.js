@@ -11,6 +11,16 @@ export default class FormDataService extends Service {
   @tracked nonsenseB = '';
   @tracked verb = '';
   @tracked noun = '';
-  @tracked nonsenseC = '';
-  @tracked nonsenseD = '';
+
+  autofill() {
+    this.name = 'Braden';
+    this.soundA = 'vroom';
+    this.vehicle = 'Toyota Prius';
+    this.animal = 'Rhea the Cat';
+    this.soundB = 'rattle';
+    this.nonsenseA = 'lalalala';
+    this.nonsenseB = 'choochoo';
+    this.verb = 'eat';
+    this.noun = 'piano';
+  }
 }
