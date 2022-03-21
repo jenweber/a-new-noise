@@ -55,6 +55,9 @@ Image capture via WebRTC. [MDN demo](https://developer.mozilla.org/en-US/docs/We
 This project uses Tailwind for the UI styles.
 [Learn more about Tailwind in Ember apps.](https://asasmith.com/tailwindcss-v3-emberjs-setup).
 
+https://www.semicolonworld.com/javascript/tutorial/accessing-webcam-and-capture-image-using-html5-and-javascript
+
+
 ## Further Reading / Useful Links
 
 * [ember.js](https://emberjs.com/)
