@@ -14,8 +14,8 @@ const fetchNarration = function (text) {
     },
     audioConfig: {
       audioEncoding: 'MP3',
-      pitch: 2,
-      speakingRate: 0.93,
+      pitch: 1.5,
+      speakingRate: 0.95,
     },
   };
 
@@ -32,9 +32,9 @@ const fetchNarration = function (text) {
       return data.json();
     })
     .then((res) => {
-      var audioElement = new Audio('data:audio/mp3;base64,' + res.audioContent);
+      let audioElement = new Audio('data:audio/mp3;base64,' + res.audioContent);
       audioElement.play();
-      Promise.resolve(audioElement);
+      return audioElement;
     })
     .catch((error) => {
       console.log(error);
