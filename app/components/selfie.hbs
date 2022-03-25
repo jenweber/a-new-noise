@@ -1,5 +1,7 @@
-<Button {{on 'click' this.turnOnCamera}}>Turn on the camera</Button>
-<Button {{on 'click' this.takeSnapshot}}>Take photo</Button>
-<ButtonLink @routeName={{'story'}}>Next page</ButtonLink>
+<div>
+  <Button {{on 'click' this.turnOnCamera}}>Turn on the camera</Button>
+  <Button {{on 'click' this.takeSnapshot}}>Take photo</Button>
+  <ButtonLink @routeName={{'story'}}>Next page</ButtonLink>
+</div>
 <video id="video" width="400" height="250" playsinline autoplay />
 <canvas id="canvas" width="400" height="250" />
