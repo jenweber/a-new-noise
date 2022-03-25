@@ -24,6 +24,7 @@ button {
   border: none;
   box-shadow: none;
   margin-bottom: 16px;
+  margin-right: 10px;
 }
 
 a.link-button {
