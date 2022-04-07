@@ -49,3 +49,12 @@ a.link-button:visited {
 .field-wrapper {
   margin-bottom: 30px;
 }
+
+#story-canvas {
+  outline: 10px solid #343434;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px;
+}
+
+.selfie-with-murphy {
+  padding-top: 30px;
+}

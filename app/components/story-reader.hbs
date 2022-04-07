@@ -43,8 +43,7 @@
     crowd that they would now
     {{this.formData.verb}}
     a
-    {{this.formData.noun}}. The crowd
-    oohed and ahhed.
+    {{this.formData.noun}}. The crowd oohed and ahhed.
   </p>
 
   <p class='pt-8'>
@@ -60,4 +59,15 @@
 
 </div>
 
-<canvas id="story-canvas" width="400" height="250" {{did-insert this.renderCanvas}} />
+{{#if this.camera.context}}
+  <div class='selfie-with-murphy'>
+    <canvas
+      id='story-canvas'
+      width='400'
+      height='250'
+      {{did-insert this.renderCanvas}}
+      role='img'
+      aria-label='Your selfie image together with an illustration of a happy springer spaniel dog. The dog has soft wavy, long fur on his droopy ears.'
+    ></canvas>
+  </div>
+{{/if}}
