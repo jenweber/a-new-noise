@@ -11,7 +11,6 @@ const constraints = {
 export default class CameraService extends Service {
   context;
   video;
-  canvas;
 
   async initCamera(videoEl) {
     let stream;
@@ -35,6 +34,5 @@ export default class CameraService extends Service {
     const tracks = window.stream.getTracks();
     tracks[0].stop();
     this.context = context;
-    this.canvas = canvas;
   }
 }

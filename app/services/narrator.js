@@ -1,11 +1,8 @@
 import Service from '@ember/service';
-
-const key = '';
-
-// https://stackoverflow.com/questions/15653145/using-google-text-to-speech-in-javascript
+import keys from 'a-new-noise/utils/keys';
 
 const fetchNarration = function (text) {
-  const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${key}`;
+  const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${keys.voice}`;
   const data = {
     input: { text },
     voice: {
