@@ -1,13 +1,22 @@
 <Button {{on 'click' this.autofill}}>Autofill</Button>
-<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 min-w-600">
-  <Field @label="Your name" @value={{this.formData.name}} />
-  <Field @label="Sound - like honk or crash" @value={{this.formData.soundA}}/>
-  <Field @label="Vehicle - like airplane" @value={{this.formData.vehicle}} />
-  <Field @label="Animal - like lion or bear" @value={{this.formData.animal}}/>
-  <Field @label="Nonsense sound, like oouihuhaha" @value={{this.formData.nonsenseA}}/>
-  <Field @label="Sound - like honk or crash" @value={{this.formData.soundB}}/>
-  <Field @label="Action verb, like smash or eat" @value={{this.formData.verb}} />
-  <Field @label="Concrete Noun, like piano" @value={{this.formData.noun}}/>
-  <Field @label="Nonsense sound, like oouihuhaha" @value={{this.formData.nonsenseB}}/>
-  <ButtonLink @routeName="photo-booth">Go to step 2</ButtonLink>
+<form class='bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 min-w-600'>
+  <Field @label='Your name' @value={{this.formData.name}} />
+  <Field @label='Sound - like honk or crash' @value={{this.formData.soundA}} />
+  <Field @label='Vehicle - like airplane' @value={{this.formData.vehicle}} />
+  <Field @label='Animal - like lion or bear' @value={{this.formData.animal}} />
+  <Field
+    @label='Nonsense sound, like oouihuhaha'
+    @value={{this.formData.nonsenseA}}
+  />
+  <Field @label='Sound - like honk or crash' @value={{this.formData.soundB}} />
+  <Field
+    @label='Action verb, like smash or eat'
+    @value={{this.formData.verb}}
+  />
+  <Field @label='Concrete Noun, like piano' @value={{this.formData.noun}} />
+  <Field
+    @label='Nonsense sound, like oouihuhaha'
+    @value={{this.formData.nonsenseB}}
+  />
+  <ButtonLink @routeName='photo-booth'>Go to step 2</ButtonLink>
 </form>

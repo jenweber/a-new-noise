@@ -3,5 +3,17 @@
   <Button {{on 'click' this.takeSnapshot}}>Take photo</Button>
   <ButtonLink @routeName={{'story'}}>Next page</ButtonLink>
 </div>
-<video id="video" width="400" height="250" playsinline autoplay hidden={{if this.showVideo false true}} />
-<canvas id="canvas" width="400" height="250"  hidden={{if this.showVideo true false}} />
+<video
+  id='video'
+  width='400'
+  height='250'
+  playsinline
+  autoplay
+  hidden={{if this.showVideo false true}}
+></video>
+<canvas
+  id='canvas'
+  width='400'
+  height='250'
+  hidden={{if this.showVideo true false}}
+></canvas>
