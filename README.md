@@ -29,31 +29,21 @@ Copy this into a `.env` file in the root. Do not commit your keys to git!
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint`
-* `npm run lint:fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
 ## Tools
 
 Image capture via WebRTC. [MDN demo](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos).
 
-https://www.semicolonworld.com/javascript/tutorial/accessing-webcam-and-capture-image-using-html5-and-javascript
+[This tutorial](https://www.semicolonworld.com/javascript/tutorial/accessing-webcam-and-capture-image-using-html5-and-javascript) helped
+me out a bunch!
 
+## License
+
+All JavaScript code is available under MIT license.
+Developers are welcome to reuse the patterns and services.
+
+For the story itself and the imagery, all rights are reserved
+by the original author, Jennifer Weber. You may not republish the
+story or the images.
 
 ## Further Reading / Useful Links
 
