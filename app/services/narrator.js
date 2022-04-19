@@ -1,6 +1,11 @@
 import Service from '@ember/service';
 import keys from 'a-new-noise/utils/keys';
 
+/**
+ * This service uses third party APIs for Google Text To Speech.
+ * See the service "firefox narrator" to run a free version
+ * that works on Firefox and requires no keys.
+ */
 const fetchNarration = function (text) {
   const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${keys.voice}`;
   const data = {
