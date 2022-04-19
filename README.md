@@ -3,6 +3,8 @@
 A demo of different kinds of services for building dynamic, creative
 Ember apps! Presented at EmberConf 2022.
 
+Try it out here, using Firefox as your browser: https://jenweber-a-new-noise.netlify.app/
+
 A project by Jen Weber.
 
 ## Prerequisites
